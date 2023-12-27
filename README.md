@@ -41,7 +41,7 @@ AnimatedVisibility(
 ## Value Animation
 This demonstrates the dynamic animation of attribute changes within a Composable object. 
 
-### Using tween {#tween-sample-anchor}
+### Using tween
 In our example we're going to show changes in the radius and size of a Box. We use the `animateIntAsState` to change the radius percent value according to the `tween` used in the `animationSpec` param. The same is true for the size but we need to use the `animateDpAsState` instead.
 
 The `easing` parameter makes most of the magic, it's used to determine the acceleration and speed at which the object's value changes as frames progress.
@@ -76,6 +76,6 @@ There are multiple ways to animate multiple values at once, but this feature pro
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b3690784-4e7e-4329-b84e-d0b24eff347c" width="30%">
 
-CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the ["Value Animation using tween" sample](#tween-sample-anchor), and it behaves much better when we spam the "toggle" button.
+CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the ["Value Animation using tween" sample](#using-tween), and it behaves much better when we spam the "toggle" button.
 
 Another possible way to animate multiple values at once would be by simply calling the animations at the same time. `updateTransition` is more useful to organize your code and make it more readable and "friendly".
