@@ -48,8 +48,9 @@ fun InfiniteTextShimmerAnimation() {
             style = TextStyle(
                 fontSize = fontSize
             ).textShimmerBrush(
-                animationDurationMilis = 1500,
-                easing = EaseInOutCirc
+                animationDurationMilis = 2000,
+                easing = EaseInOutCirc,
+                shimmerLaps = 3
             )
         )
 
