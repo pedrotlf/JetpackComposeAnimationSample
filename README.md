@@ -66,3 +66,16 @@ We're also using `animateDpAsState`, but now we replaced `tween` with `spring` a
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b07520ad-1db9-4608-b002-59b8620c21cd" width="30%">
 
 CAUTION! This boucing effect put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
+
+## Multiple Value Animation
+Here we showcase the power of `updateTransition` to simuntaniously animate changes in the size, shape and color of a Box. 
+
+There are multiple ways to animate multiple values at once, but this feature provides a streamlined approach to organize and synchronize multiple animations at once. Whenever the `targetState` undergoes a change, it triggers the animations for all associated children.
+
+[MultipleValueAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/MultipleValueAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b3690784-4e7e-4329-b84e-d0b24eff347c" width="30%">
+
+CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the `ValueTweenAnimation` sample, and it behaves much better when we spam the "toggle" button.
+
+Another possible way to animate multiple values at once would be by simply calling the animations at the same time. `updateTransition` is more useful to organize your code and make it more readable and "friendly".
