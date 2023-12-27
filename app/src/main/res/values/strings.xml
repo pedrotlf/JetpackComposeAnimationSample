@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JetpackComposeAnimationSample</string>
+    <string name="back_button">Button to navigate back</string>
+</resources>
