@@ -108,7 +108,7 @@ To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`.
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf" width="60%">
 
 ### Infinite Shimmer Animation (Loading Skeleton)
-As mentioned before, loading animations are the most used infinite animation (at least in our opinion). The infinite animated border shown previously can also be considered a loading animation. But one of newest animations used for loading is the Shimmer (mostly used as skeletons).
+As mentioned before, loading animations are the most used infinite animations (at least in our opinion). The infinite animated border shown previously can also be considered a loading animation. But one of newest animations used for loading is the Shimmer (mostly used as skeletons).
 
 Now we are going to showcase an infinite shimmer animation behaving as a loading placeholder.
 
