@@ -119,3 +119,14 @@ Then just for the purpose of the example we added an image and then added a surf
 [InfiniteShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteShimmerAnimation.kt)
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/06b064d9-52ad-44b5-a6ef-68ea6ecebac8" width="40%">
+
+### Infinite Shimmer Text Animation
+Loading can be one of the most popular usecase for the infinite animation but it's not the only one. We can also make text looks way cooler!
+
+Here we will demonstrate an infinite shimmer effect applied to a text.
+
+The code is really similar to the previous animation, the only differences are that we animate both the `linearGradient()`'s `start` and `end` parameters and also use the text's fontsize as the `targetValue`. The fontsize is important to know the angle of the gradient and make it the same through different text sizes. When updating the the `linearGradient()`'s `start` and `end` parameters, the difference between them will always be the fontsize, that way we will have an effect of a static gradient image moving around the text. Finally the resulting `Brush` will be used in the TextStyle.
+
+[InfiniteTextShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteTextShimmerAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/a3ba9b4e-7773-4e81-8611-4e9ec9320006" width="30%">
