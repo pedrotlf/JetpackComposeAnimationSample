@@ -12,3 +12,11 @@ Welcome to the Jetpack Compose animations showcase repo! Harnessing the powerful
 ## About the Project
 Jetpack Compose, a modern UI toolkit for Android development, provides a declarative approach to building interfaces along with the ability to create intuitive animations. The "animation-core-android" library is a key component of Compose, offering features for crafting seamless transitions, captivating visual effects, and immersive interactions.
 
+## Showcase
+
+### Visibility Animation
+This showcases the seamless transition of an object between visibility states.
+
+[VisibilityAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/VisibilityAnimation.kt)
+
+![visibility_animation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/67662c0a-56f0-4137-8c61-1dd83eeef51e)
