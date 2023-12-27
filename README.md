@@ -130,3 +130,5 @@ The code is really similar to the previous animation, the only differences are t
 [InfiniteTextShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteTextShimmerAnimation.kt)
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/a3ba9b4e-7773-4e81-8611-4e9ec9320006" width="30%">
+
+Notice we added an odd param called `shimmerLaps` to our shimmer function. It determines the amount of times the gradient passes through the text before the animation finishes. It is most useful if combined with a non linear easing, so you can notice the effect better. Go to the code and try to play around with the `animationDurationMilis`, `shimmerLaps` and `easing` params. (Use the [easings.net](https://easings.net/))
