@@ -105,4 +105,4 @@ To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`.
 
 [InfiniteBorderAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteBorderAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf" width="50%">
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf" width="60%">
