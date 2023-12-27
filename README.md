@@ -106,3 +106,16 @@ To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`.
 [InfiniteBorderAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteBorderAnimation.kt)
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf" width="60%">
+
+### Infinite Shimmer Animation (Loading Skeleton)
+As mentioned before, loading animations are the most used infinite animation (at least in our opinion). The infinite animated border shown previously can also be considered a loading animation. But one of newest animations used for loading is the Shimmer (mostly used as skeletons).
+
+Now we are going to showcase an infinite shimmer animation behaving as a loading placeholder.
+
+For that we will also use `Brush` to get a gradient effect, but now using the `linearGradient()`. For the shimmer effect we will use a list of `Color.LightGray` changing a bit of the `alpha` to achieve a "shining effect". Finally we will animate the `linearGradient()`'s `end` offset where the target value is 10 times the content size, this high value will make the shimmer effect pass quickly through the whole content during the animation.
+
+Then just for the purpose of the example we added an image and then added a surface over it with the shimmer applied to simulate a loading layout hidding the content behind it.
+
+[InfiniteShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteShimmerAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/06b064d9-52ad-44b5-a6ef-68ea6ecebac8" width="40%">
