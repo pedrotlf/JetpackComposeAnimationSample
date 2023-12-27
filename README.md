@@ -37,3 +37,31 @@ AnimatedVisibility(
     Box(modifier = Modifier.background(Color.Red))
 }
 ```
+
+## Value Animation
+This demonstrates the dynamic animation of attribute changes within a Composable object. 
+
+### Using tween
+In our example we're going to show changes in the radius and size of a Box. We use the `animateIntAsState` to change the radius percent value according to the `tween` used in the `animationSpec` param. The same is true for the size but we need to use the `animateDpAsState` instead.
+
+The `easing` parameter makes most of the magic, it's used to determine the acceleration and speed at which the object's value changes as frames progress.
+
+You will notice that we animate only a value and do not wrap the object around another Composable like we did with the `VisibilityAnimation`. Jetpack Compose already recomposes the `Box` whenever the `size` or the `borderRadius` change, causing the animation.
+
+[ValueTweenAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ValueTweenAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/7d099e69-d124-45c3-926c-f8e32314625e" width="30%">
+
+Check out [Easgings.net](https://easings.net/) for some examples of different easings.
+CAUTION! Bouncing styles of Ease may put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
+
+### Using spring
+Now we're going to show changes in the size of a circular Box, but with some bounciness applied!
+
+We're also using `animateDpAsState`, but now we replaced `tween` with `spring` and applied the `dampingRatio` and `stiffness` in order to achieve some bounciness.
+
+[ValueSpringAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ValueSpringAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b07520ad-1db9-4608-b002-59b8620c21cd" width="30%">
+
+CAUTION! This boucing effect put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
