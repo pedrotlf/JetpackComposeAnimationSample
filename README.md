@@ -14,9 +14,10 @@ Jetpack Compose, a modern UI toolkit for Android development, provides a declara
 
 [Check Google's documentation for Jetpack Compose animations](https://developer.android.com/jetpack/compose/animation/introduction)
 
-## Showcase
+# Showcase
+Let's dive into the showcase!
 
-### Visibility Animation
+## Visibility Animation
 This showcases the seamless transition of an object between visibility states. Easy to achieve by simply wraping your object or layout with the composable `AnimatedVisibility()`.
 
 [VisibilityAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/VisibilityAnimation.kt)
