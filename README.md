@@ -17,8 +17,22 @@ Jetpack Compose, a modern UI toolkit for Android development, provides a declara
 ## Showcase
 
 ### Visibility Animation
-This showcases the seamless transition of an object between visibility states.
+This showcases the seamless transition of an object between visibility states. Easy to achieve by simply wraping your object or layout with the composable `AnimatedVisibility()`.
 
 [VisibilityAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/VisibilityAnimation.kt)
 
 ![visibility_animation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/67662c0a-56f0-4137-8c61-1dd83eeef51e)
+
+You can also edit your animation changing the `enter` and/or `exit` parameter. You can also combine animations using the operator `+`.
+
+```kotlin
+//Give this example a try!
+AnimatedVisibility(
+    visible = isVisible,
+    modifier = Modifier.fillMaxWidth().weight(1f),
+    enter = fadeIn() + slideInHorizontally(),
+    exit = fadeOut() + slideOutHorizontally()
+) {
+    Box(modifier = Modifier.background(Color.Red))
+}
+```
