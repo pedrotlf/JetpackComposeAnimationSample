@@ -86,7 +86,9 @@ This is one of the most used animations, the infinite repeatable animation, usin
 Using this is as simple as the previous features, we just need to assign a `rememberInfiniteTransition()` to a `val` and call `.animateColor()` or `.animateFloat()` for example. The `animationSpec` parameter now receives a `InfiniteRepeatableSpec` that also specifies the animation duration with `tween` or `spring` for example, and receives the `repeatMode` that determines how the animation will keep repeating (reversing or restarting).
 
 ### Simple Infinite Value Animation
-Here we showcase an infinite animation of a spining Box that keps changing it's color between red and green. It is achieved by simply animating the rotation value from 0 to 360 (`animateFloat()`), using the `repeatMode = Restart` (since 360 degrees is the same as 0 degrees for the rotation), and the color from `Color.Red` to `Color.Green` (`animateColor()`), using the `repeatMode = Reverse` (for colors it's beter to reverse so we don't get a "blink" effect).
+Here we showcase an infinite animation of a spining Box that keps changing it's color between red and green.
+
+It is achieved by simply animating the rotation value from 0 to 360 (`animateFloat()`), using the `repeatMode = Restart` (since 360 degrees is the same as 0 degrees for the rotation), and the color from `Color.Red` to `Color.Green` (`animateColor()`), using the `repeatMode = Reverse` (for colors it's beter to reverse so we don't get a "blink" effect).
 
 [InfiniteValueAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteValueAnimation.kt)
 
