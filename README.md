@@ -53,6 +53,7 @@ You will notice that we animate only a value and do not wrap the object around a
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/7d099e69-d124-45c3-926c-f8e32314625e" width="30%">
 
 Check out [Easgings.net](https://easings.net/) for some examples of different easings.
+
 CAUTION! Bouncing styles of Ease may put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
 
 ### Using spring
