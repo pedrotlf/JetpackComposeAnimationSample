@@ -88,8 +88,12 @@ Using this is as simple as the previous features, we just need to assign a `reme
 ### Simple Infinite Value Animation
 Here we showcase an infinite animation of a spining Box that keps changing it's color between red and green.
 
-It is achieved by simply animating the rotation value from 0 to 360 (`animateFloat()`), using the `repeatMode = Restart` (since 360 degrees is the same as 0 degrees for the rotation), and the color from `Color.Red` to `Color.Green` (`animateColor()`), using the `repeatMode = Reverse` (for colors it's beter to reverse so we don't get a "blink" effect).
+It is achieved by simply animating the rotation value from 0 to 360 (`animateFloat()`), using the `repeatMode = Restart` (since 360 degrees is the same as 0 degrees for the rotation), and the color from `Color.Red` to `Color.Green` (`animateColor()`), using the `repeatMode = Reverse`.
+
+Notice that if the `targetValue` and the `initialValue` represents the same state we can use the `Restart` mode without noticing when the animation restarted, otherwise the animation would "blink" back to the initial state. With the `Reverse` mode we will never have that problem.
 
 [InfiniteValueAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteValueAnimation.kt)
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/c92d1499-b767-46f8-9a8c-cbab134489d9" width="30%">
+
+Here we are using the `tween` with the `LinearEasing`, to achieve that linear animation, but we could use any other kind of easing. Try it out!
