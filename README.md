@@ -132,3 +132,23 @@ The code is really similar to the previous animation, the only differences are t
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/a3ba9b4e-7773-4e81-8611-4e9ec9320006" width="30%">
 
 Notice we added an odd param called `shimmerLaps` to our shimmer function. It determines the amount of times the gradient passes through the text before the animation finishes. It is most useful if combined with a non linear easing, so you can notice the effect better. Go to the code and try to play around with the `animationDurationMilis`, `shimmerLaps` and `easing` params. (Check [easings.net](https://easings.net/))
+
+## Content Animation
+And last but not least, the content animation. Its usage is pretty straight forward, similar to the visibility animation. Just wrap your content around the `AnimatedContent` and pass the `targetState` to determine what changes to trigger the animation.
+
+Notice that we no longer have a `enter` and `exit` param as we did with the `AnimatedVisibility`, but we can still achieve that using the `transitionSpec`. Just pass a animation as the enter animation and use the `togetherWith` to add the exit animation to it.
+
+The `AnimatedContent` also takes a param called `content`, that brings the `targetState` with it, this should determine the content depending on the `targetState` we receive.
+
+Pay attention to the fact that `transitionSpec` is inside a `AnimatedContentTransitionScope`, where you can access the `targetState` and `initialState`. `content` is also inside a scope, the `AnimatedContentScope`, where we have access to the `transition`, which have a lot of useful fields.
+
+### Simple Content Animation
+Here we showcase a simple content change animation going between a red layout and a green layout. 
+
+When we click the "toggle" button, the state goes from `true` to `false` and the transition between contents is animated. 
+
+We take advantage of the `AnimatedContentScope` to compare the `transition.currentState` and `transition.targetState`. If both are different, then we know that the animation is ongoing, and with that information we can block interactions with the "toggle" button until the animation finishes.
+
+[ContentAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentAnimation.kt)
+
+![content_animation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/2ae3b478-41b5-4ce9-8f75-a6492e82cb77)
