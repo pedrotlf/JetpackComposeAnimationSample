@@ -3,9 +3,7 @@ Welcome to the Jetpack Compose animations showcase repo! Harnessing the powerful
 
 <p align="center">
   <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb85954-8a61-4154-a082-332a9137f61b" width="25%" align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb2e7aa-4d84-419e-9ba9-0ba2a4b07ccc" width="37.5%" align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/4a7790a3-c746-4829-8126-e47cafcb4b4a" width="21.25%" align="center">
 </p>
 
