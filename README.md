@@ -171,3 +171,5 @@ With a lot of animation samples available, this project definitively serves as a
 
 # Contribution
 Feel free to create pull requests if you want to add more cool animations examples to show to the community!
+
+If you want to create a new screen, just add it to the [AnimationScreens.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/AnimationScreens.kt) and the sample app will automatically add a button to open it.
