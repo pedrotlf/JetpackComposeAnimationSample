@@ -167,3 +167,9 @@ We still take advantage of the `AnimatedContentScope` to block interactions with
 [ContentCountAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentCountAnimation.kt)
 
 <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/56476945-85d7-42aa-b426-fd0fb3a24577" width="40%">
+
+# Conclusion
+With a lot of animation samples available, this project definitively serves as a template for your own animations or even to copy to be used in your own projects!
+
+# Contribution
+Feel free to create pull requests if you want to add more cool animations examples to show to the community!
