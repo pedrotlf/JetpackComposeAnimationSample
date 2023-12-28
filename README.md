@@ -151,4 +151,19 @@ We take advantage of the `AnimatedContentScope` to compare the `transition.curre
 
 [ContentAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentAnimation.kt)
 
-![content_animation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/2ae3b478-41b5-4ce9-8f75-a6492e82cb77)
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/2ae3b478-41b5-4ce9-8f75-a6492e82cb77" width="30%">
+
+### Content Count Animation
+Now we're going to show case a more complex, but still simple, animation of a number counter.
+
+We added to buttons, the "count up" and the "count down" button. Here the count itself is the `targetValue`, whenever it changes, the transition animation is triggered.
+
+The `transitionSpec` is now a little bit more complex. We are combining the `slideIntoContainer` with the `fadeIn` using the `+` operator for the enter animation and then using the `togetherWith` to add the `slideOutOfContainer` `+` `fadeOut` for the exit animation. Finally we get the resulting animation and combine it with the `SizeTransform(clip = false)` using the `using` function, this will prevent the animation from being clipped by its layout limits.
+
+We also take advantage of the `AnimatedContentTransitionScope` to compare the `targetState` with the `initialState`. If the `targetState` is greater than the `initialState` then we know that we're couting up, this way we can determine if the animation goes upwards or downwards.
+
+We still take advantage of the `AnimatedContentScope` to block interactions with the buttons while the animation happens, as we did with the previous showcase.
+
+[ContentCountAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentCountAnimation.kt)
+
+<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/56476945-85d7-42aa-b426-fd0fb3a24577" width="40%">
