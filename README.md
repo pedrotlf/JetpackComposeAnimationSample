@@ -2,11 +2,11 @@
 Welcome to the Jetpack Compose animations showcase repo! Harnessing the powerful capabilities of Jetpack Compose, this project is a collection of dynamic and interactive animations implemented using the "animation-core-android" library.
 
 <p align="center">
-  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/53554000-0347-4d07-971b-bd3af97005f9" width="20%" align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb2e7aa-4d84-419e-9ba9-0ba2a4b07ccc" width="30%" align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb85954-8a61-4154-a082-332a9137f61b" width="20%" align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb2e7aa-4d84-419e-9ba9-0ba2a4b07ccc" width="30%" align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/4a7790a3-c746-4829-8126-e47cafcb4b4a" width="17%" align="center">
 </p>
 
 ## About the Project
