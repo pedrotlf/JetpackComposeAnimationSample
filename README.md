@@ -81,7 +81,7 @@ Another possible way to animate multiple values at once would be by simply calli
 ## Infinite Value Animation (Repeatable)
 This is one of the most used animations, the infinite repeatable animation, using the `InfiniteTransition`. Mostly used in loading animations, this animation repeats itself by restarting the animation from 0 or reversing when it finishes. This feature is similar to `updateTransition`, organizing and syncronizing multiple animations, but now with an infinite duration.
 
-Using this is as simple as the previous features, we just need to assign a `rememberInfiniteTransition()` to a `val` and call `.animateColor()` or `.animateFloat()` for example. The `animationSpec` parameter now receives a `InfiniteRepeatableSpec` that also specifies the animation duration with `tween` or `spring` for example, and receives the `repeatMode` that determines how the animation will keep repeating (reversing or restarting).
+Using this is as simple as the previous features, we just need to assign a `rememberInfiniteTransition()` to a `val` and call `.animateColor()` or `.animateFloat()` for example. The `animationSpec` parameter now receives a `InfiniteRepeatableSpec` where we pass an `infiniteRepeatable` that also specifies the animation duration with `tween` or `spring` for example, and receives the `repeatMode` that determines how the animation will keep repeating (reversing or restarting).
 
 ### Simple Infinite Value Animation
 Here we showcase an infinite animation of a spining Box that keps changing it's color between red and green.
