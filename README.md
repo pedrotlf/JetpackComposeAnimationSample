@@ -52,7 +52,7 @@ You will notice that we animate only a value and do not wrap the object around a
 
 Check out [Easgings.net](https://easings.net/) for some examples of different easings.
 
-CAUTION! Bouncing styles of Ease may put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
+⚠️ CAUTION! Bouncing styles of Ease may put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
 
 ### Using spring
 Now we're going to show changes in the size of a circular Box, but with some bounciness applied!
@@ -63,7 +63,7 @@ We're also using `animateDpAsState`, but now we replaced `tween` with `spring` a
 
 ![ValueSpringAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b07520ad-1db9-4608-b002-59b8620c21cd)
 
-CAUTION! This boucing effect put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
+⚠️ CAUTION! This boucing effect put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
 
 ## Multiple Value Animation
 Here we showcase the power of `updateTransition` to simuntaniously animate changes in the size, shape and color of a Box. 
@@ -74,7 +74,7 @@ There are multiple ways to animate multiple values at once, but this feature pro
 
 ![MultipleValueAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b3690784-4e7e-4329-b84e-d0b24eff347c)
 
-CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the ["Value Animation using tween" sample](#using-tween), and it behaves much better when we spam the "toggle" button.
+⚠️ CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the ["Value Animation using tween" sample](#using-tween), and it behaves much better when we spam the "toggle" button.
 
 Another possible way to animate multiple values at once would be by simply calling the animations at the same time. `updateTransition` is more useful to organize your code and make it more readable and "friendly".
 
