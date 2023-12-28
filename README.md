@@ -2,11 +2,11 @@
 Welcome to the Jetpack Compose animations showcase repo! Harnessing the powerful capabilities of Jetpack Compose, this project is a collection of dynamic and interactive animations implemented using the "animation-core-android" library.
 
 <p align="center">
-  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb85954-8a61-4154-a082-332a9137f61b" width="20%" align="center">
+  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb85954-8a61-4154-a082-332a9137f61b" width="25%" align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb2e7aa-4d84-419e-9ba9-0ba2a4b07ccc" width="30%" align="center">
+  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/3cb2e7aa-4d84-419e-9ba9-0ba2a4b07ccc" width="37.5%" align="center">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/4a7790a3-c746-4829-8126-e47cafcb4b4a" width="17%" align="center">
+  <img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/4a7790a3-c746-4829-8126-e47cafcb4b4a" width="21.25%" align="center">
 </p>
 
 ## About the Project
@@ -50,7 +50,7 @@ You will notice that we animate only a value and do not wrap the object around a
 
 [ValueTweenAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ValueTweenAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/7d099e69-d124-45c3-926c-f8e32314625e" width="30%">
+![ValueTweenAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/7d099e69-d124-45c3-926c-f8e32314625e)
 
 Check out [Easgings.net](https://easings.net/) for some examples of different easings.
 
@@ -63,7 +63,7 @@ We're also using `animateDpAsState`, but now we replaced `tween` with `spring` a
 
 [ValueSpringAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ValueSpringAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b07520ad-1db9-4608-b002-59b8620c21cd" width="30%">
+![ValueSpringAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b07520ad-1db9-4608-b002-59b8620c21cd)
 
 CAUTION! This boucing effect put values beyond or below the provided range. This could cause crashes when dealing with border radius percent for example, since it's expected range is 0-100.
 
@@ -74,7 +74,7 @@ There are multiple ways to animate multiple values at once, but this feature pro
 
 [MultipleValueAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/MultipleValueAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b3690784-4e7e-4329-b84e-d0b24eff347c" width="30%">
+![MultipleValueAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/b3690784-4e7e-4329-b84e-d0b24eff347c)
 
 CAUTION! `updateTransition` acts weird when we change the `targetValue` before the animation finishes (and we don't know the reason for that). You can try it out in our sample app by spamming the "toggle" button. Notice that we also have a multiple value change in the ["Value Animation using tween" sample](#using-tween), and it behaves much better when we spam the "toggle" button.
 
@@ -94,7 +94,7 @@ Notice that if the `targetValue` and the `initialValue` represents the same stat
 
 [InfiniteValueAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteValueAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/c92d1499-b767-46f8-9a8c-cbab134489d9" width="30%">
+![InfiniteValueAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/c92d1499-b767-46f8-9a8c-cbab134489d9)
 
 Here we are using the `tween` with the `LinearEasing`, to achieve that linear animation, but we could use any other kind of easing. Try it out!
 
@@ -105,7 +105,7 @@ To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`.
 
 [InfiniteBorderAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteBorderAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf" width="60%">
+![InfiniteBorderAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/768c2997-a207-4885-bf7c-ff34a2dea2bf)
 
 ### Infinite Shimmer Animation (Loading Skeleton)
 As mentioned before, loading animations are the most used infinite animations (at least in our opinion). The infinite animated border shown previously can also be considered a loading animation. But one of newest animations used for loading is the Shimmer (mostly used as skeletons).
@@ -118,7 +118,7 @@ Then just for the purpose of the example we added an image and then added a surf
 
 [InfiniteShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteShimmerAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/06b064d9-52ad-44b5-a6ef-68ea6ecebac8" width="40%">
+![InfiniteShimmerAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/06b064d9-52ad-44b5-a6ef-68ea6ecebac8)
 
 ### Infinite Shimmer Text Animation
 Loading can be one of the most popular usecase for the infinite animation but it's not the only one. We can also make text looks way cooler!
@@ -129,7 +129,7 @@ The code is really similar to the previous animation, the only differences are t
 
 [InfiniteTextShimmerAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteTextShimmerAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/a3ba9b4e-7773-4e81-8611-4e9ec9320006" width="30%">
+![InfiniteTextShimmerAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/a3ba9b4e-7773-4e81-8611-4e9ec9320006)
 
 Notice we added an odd param called `shimmerLaps` to our shimmer function. It determines the amount of times the gradient passes through the text before the animation finishes. It is most useful if combined with a non linear easing, so you can notice the effect better. Go to the code and try to play around with the `animationDurationMilis`, `shimmerLaps` and `easing` params. (Check [easings.net](https://easings.net/))
 
@@ -151,7 +151,7 @@ We take advantage of the `AnimatedContentScope` to compare the `transition.curre
 
 [ContentAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/2ae3b478-41b5-4ce9-8f75-a6492e82cb77" width="30%">
+![ContentAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/2ae3b478-41b5-4ce9-8f75-a6492e82cb77)
 
 ### Content Count Animation
 Now we're going to show case a more complex, but still simple, animation of a number counter.
@@ -166,7 +166,7 @@ We still take advantage of the `AnimatedContentScope` to block interactions with
 
 [ContentCountAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/ContentCountAnimation.kt)
 
-<img src="https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/56476945-85d7-42aa-b426-fd0fb3a24577" width="40%">
+![ContentCountAnimation](https://github.com/pedrotlf/JetpackComposeAnimationSample/assets/38842991/56476945-85d7-42aa-b426-fd0fb3a24577)
 
 # Conclusion
 With a lot of animation samples available, this project definitively serves as a template for your own animations or even to copy to be used in your own projects!
