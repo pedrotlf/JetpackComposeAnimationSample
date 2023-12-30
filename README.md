@@ -99,7 +99,7 @@ Here we are using the `tween` with the `LinearEasing`, to achieve that linear an
 ### Infinite Border Animation
 Now things are getting prettier. Here we're going to showcase an infinite rotating border animation. One with a linear easing and another one using the `EaseInOutCirc` combined with multiple turns (target rotation value as 1080 degrees).
 
-To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`. By calling its function `.sweepGradient()` and passing a list of colors, it creates a sweep gradient with the given colors which draws clockwise. Then we draw a circle using the resulting `Brush` and animate the rotation angle, putting it right before the `drawContent()` (inside the `drawWithContent{}`) so we can have the border effect.
+To achieve that we used the Jetpack Compose Ui Graphic component called `Brush`. By calling its function `.sweepGradient()` and passing a list of colors, it creates a sweep gradient with the given colors which is drawn clockwise. Then we draw a circle using the resulting `Brush` and animate the rotation angle, putting it right before the `drawContent()` (inside the `drawWithContent{}`) so we can have the border effect.
 
 [InfiniteBorderAnimation.kt](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/app/src/main/java/com/pedrotlf/jetpackcomposeanimationsample/ui/InfiniteBorderAnimation.kt)
 
