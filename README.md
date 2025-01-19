@@ -12,6 +12,9 @@ Jetpack Compose, a modern UI toolkit for Android development, provides a declara
 
 [Check Google's documentation for Jetpack Compose animations](https://developer.android.com/jetpack/compose/animation/introduction)
 
+## Compose Preview Screenshot Testing
+We recently added screenshot testing to our project, take a look at the [SCREENSHOT_TEST_README](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/SCREENSHOT_TEST_README.md) for more details.
+
 # Showcase
 Let's dive into the showcase!
 
