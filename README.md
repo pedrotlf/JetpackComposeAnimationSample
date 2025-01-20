@@ -1,4 +1,6 @@
 # Jetpack Compose Animation Showcase
+[![screenshot-test](https://img.shields.io/badge/screenshot_test-readme-28A745)](https://github.com/pedrotlf/JetpackComposeAnimationSample/blob/main/SCREENSHOT_TEST_README.md)
+
 Welcome to the Jetpack Compose animations showcase repo! Harnessing the powerful capabilities of Jetpack Compose, this project is a collection of dynamic and interactive animations implemented using the "animation-core-android" library.
 
 <p align="center">
