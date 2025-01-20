@@ -20,7 +20,7 @@ We are not going to dive into setup details, but it is important to mention that
 
 First of all we needed to make sure that our project had Kotlin 1.9.20 or higher and Android Gradle 8.5.0-beta01 or higher. If your current project does not have that and you want to use the testing tool, make sure to update your project before doing that.
 
-Here's a link to the official docs section where you'll find a simple guide to setup/enable the testing tool.
+[Here's a link to the official docs section where you'll find a simple guide to setup/enable the testing tool.](https://developer.android.com/studio/preview/compose-screenshot-testing#setup)
 
 ## 2. Creating tests
 First lets create a directory called `screenshotTest\kotlin` in the `ProjectName\app\src` folder. If you already enabled the testing tool, Android Studio will recommend the name as you begin to type it when creating the directory.
